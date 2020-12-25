@@ -9,6 +9,7 @@ class Comics extends Component {
             <div className="Container">
                 <div className="Content">
                     <Navigation name="magazine"/>
+                    <p></p>
                 </div>
             </div>
         );
