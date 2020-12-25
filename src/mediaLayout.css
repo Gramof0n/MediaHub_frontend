@@ -1,0 +1,316 @@
+.Container{
+  display:flex;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  /* align-items: center; */
+
+}
+
+.Content{
+  min-width: 70%;
+  min-height: 60vh;
+  display: flex;
+  /* border: 3px solid  black;
+  border-radius: 3vh; */
+  flex-direction: column;
+  /* background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); */
+  max-width: 100vh;
+  max-height: 100vh;
+}
+
+.NavBar{
+  display: flex;
+  flex-direction: column;
+  /* background-color:  #f3f3f3; */
+  border-radius: 5vh 5vh 0vh 0vh;
+  padding: 6px;
+  border-bottom: 2px solid black; 
+}
+
+
+.navItems{
+  display:flex;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+
+.navItem{
+  margin-right: 2vh;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5vh;
+}
+
+
+.navItem:hover{
+  /* color: #8fa298; */
+  color: gray;
+  cursor: pointer;
+}
+
+
+.DataDisplay{
+  display: flex;
+  flex-grow: 1;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.sidebarItem{
+  border: 1px solid black;
+  border-radius: 5vh;
+  padding: 2vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #1761A0;
+  color: white;
+}
+
+.sidebarItem:hover{
+  /* background-color: #b6ccc0; */
+  background-color: #e78200;
+  cursor: pointer;
+}
+
+
+.doStuff{
+  display: flex;
+  flex-grow: 1;
+  overflow-y: scroll;
+  max-height: 80vh;
+
+}
+
+.doStuff::-webkit-scrollbar{
+  display: none;
+}
+
+.stuffContainer{
+  width: 30%;
+  min-width: 30%;
+  margin-right: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.stuff{
+  display: flex;
+  flex-direction: column;
+  border-radius: 5vh;
+  
+}
+
+
+.inputGenre{
+  margin-bottom: 1rem;
+  height: 3vh;
+}
+
+.submit{
+  height: 5vh;
+  max-width: 20vh;
+  border-radius: 5vh;
+  background-color: transparent;
+  outline: none;
+  background-color: #1761A0;
+  color: white;
+}
+
+.submit:hover{
+  cursor: pointer;
+  /* background-color: #b6ccc0; */
+  background-color:  #e78200;
+}
+
+.itemContainer{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-grow: 1;
+  border: 1px solid black;
+  border-radius: 5vh;
+  min-height: 25rem;
+  min-width: 15rem;
+  margin: 3px;
+  padding: 5em;
+  
+}
+
+.itemContainer span {
+  font-size: 15px;
+}
+
+.itemContainer input{
+  width: 90%;
+}
+
+.firstSegment, .secondSegment{
+  flex: 0 50%;
+}
+
+.itemEdit{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.authorContainer{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.authorContainer input{
+  width: 100%;
+}
+.operations{
+  border: 1px solid black;
+  padding: 1vh;
+  border-radius: 4vh;
+  color: white;
+  background-color: #1761A0;
+}
+
+.operations:hover{
+  cursor: pointer;
+  /* background-color: #b6ccc0; */
+  background-color:  #e78200;
+  color: white;
+}
+
+
+.buttonContainer a{
+  margin: 1vh;
+}
+
+.buttonContainer input{
+  background-color: transparent;
+  margin: 1vh;
+}
+
+
+.tableContainer{
+  display: flex;
+  margin: auto 0;
+  width: 100%;
+}
+
+.comicsTable{
+  width: 100%;
+  min-height: 50vh;
+  max-height: 0vh;
+  height: auto;
+  font-size: 18px;
+  /* background-color: #1761A0; */
+  /* color: white; */
+  border-collapse: collapse;
+  overflow: scroll;
+}
+
+
+
+td, th{
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid black;
+}
+
+th{
+  height: 1vh;
+}
+tr{
+  height: 5vh;
+}
+
+
+tr:nth-child(even){
+  background-color: #1761A0;
+  color: white;
+}
+
+/* SVE ZA INSERT OVDJE*/
+.itemContainerInsert {
+  display: flex;
+  flex-direction: row;
+}
+
+.itemInsert{
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.itemContainerInsert{
+  display: flex;
+  flex-direction: row;
+  min-height: 25rem;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  
+}
+
+@media only screen and (max-width: 800px){
+  .itemContainerInsert{
+    flex-direction: column;
+    height: 50vh;
+  }
+
+  .imageWrapper{
+    display:none;
+   }
+}
+
+.itemInsert::-webkit-scrollbar {
+  display: none;
+}
+
+form{
+  display: flex;
+  flex: 0 50%;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  /* padding: 3em; */
+}
+
+.firstSegmentInsert, .secondSegmentInsert{
+  flex: 0 50%;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageWrapper{
+ width: 40rem;
+}
+
+.imageWrapper img{
+  width: 100%;
+}
+
+form .author {
+  font-size: 20px;
+}
+
+form input {
+  width: 90%;
+  height: 3em;
+}
+
+.buttonContainerInsert{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.buttonContainer input {
+  width: 50px;
+  height: 3em;
+}
